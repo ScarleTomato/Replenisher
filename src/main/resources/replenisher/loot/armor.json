@@ -1,0 +1,52 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/armor/helmet"
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/armor/chestplate"
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/armor/leggings"
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/armor/boots"
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        }
+    ]
+}

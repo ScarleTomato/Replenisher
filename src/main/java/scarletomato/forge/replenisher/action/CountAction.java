@@ -6,16 +6,21 @@ import java.util.List;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.text.TextComponentString;
+import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.world.WorldServer;
 
 public class CountAction extends CommandAction {
 
+	public CountAction(MinecraftServer server, ICommandSender sender) {
+		super(server, sender);
+	}
+
 	@Override
-	public CommandAction execute(MinecraftServer server, ICommandSender sender) {
-		for(TileEntity te : countAllChestsOnServer(server)) {
-			
-			sender.addChatMessage(new TextComponentString(te.getBlockType().toString() + ":" + te.getPos().toString()));
+	public CommandAction execute() {
+		List<TileEntityChest> tes = countAllChestsOnServer(server);
+		say("found %s chests", tes.size());
+		for(TileEntity te : tes) {
+			say(te.getBlockType().toString() + ":" + te.getPos().toString());
 		}
 		return this;
 	}
@@ -25,11 +30,13 @@ public class CountAction extends CommandAction {
 		return this;
 	}
 
-	List<TileEntity> countAllChestsOnServer(MinecraftServer server) {
-		List<TileEntity> count = new LinkedList<>();
+	static List<TileEntityChest> countAllChestsOnServer(MinecraftServer server) {
+		List<TileEntityChest> count = new LinkedList<>();
 		for(WorldServer ws : server.worldServers) {
 			for(TileEntity te : ws.loadedTileEntityList) {
-				count.add(te);
+				if(te instanceof TileEntityChest) {
+					count.add((TileEntityChest) te);
+				}
 			}
 		}
 		return count;

@@ -2,9 +2,12 @@ package scarletomato.forge.replenisher.action;
 
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.util.text.TextComponentString;
 
 public class HelpAction extends CommandAction {
+
+	public HelpAction(MinecraftServer server, ICommandSender sender) {
+		super(server, sender);
+	}
 
 	@Override
 	public CommandAction setArguments(String[] args) {
@@ -12,8 +15,8 @@ public class HelpAction extends CommandAction {
 	}
 
 	@Override
-	public CommandAction execute(MinecraftServer server, ICommandSender sender) {
-		sender.addChatMessage(new TextComponentString("hey"));
+	public CommandAction execute() {
+		say("hey");
 		return this;
 	}
 	

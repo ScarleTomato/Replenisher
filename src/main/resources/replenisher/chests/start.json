@@ -1,0 +1,64 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/weapon"
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/armor"
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/food"
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/tool"
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/junk"
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        }
+    ]
+}

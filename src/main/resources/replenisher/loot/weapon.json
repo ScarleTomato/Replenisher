@@ -1,0 +1,103 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/weapon/bowandarrow"
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:wooden_sword"
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:wooden_sword",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:stone_sword"
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:stone_sword",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_sword"
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_sword",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:golden_sword"
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:golden_sword",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond_sword"
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond_sword",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

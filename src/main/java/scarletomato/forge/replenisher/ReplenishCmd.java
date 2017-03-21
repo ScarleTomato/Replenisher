@@ -1,6 +1,5 @@
 package scarletomato.forge.replenisher;
 
-import java.util.Comparator;
 import java.util.List;
 
 import net.minecraft.command.CommandException;
@@ -8,10 +7,8 @@ import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentString;
 import scala.actors.threadpool.Arrays;
 import scarletomato.forge.replenisher.action.CommandAction;
-import scarletomato.forge.replenisher.action.CountAction;
 
 public class ReplenishCmd implements ICommand {
 
@@ -38,7 +35,7 @@ public class ReplenishCmd implements ICommand {
 
 	@Override
 	public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
-		CommandAction.getAction(args).execute(server, sender);
+		CommandAction.getAction(server, sender, args).execute();
 	}
 
 	@Override
