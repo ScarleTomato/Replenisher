@@ -24,14 +24,8 @@
                     ]
                 },
                 {
-                    "type": "item",
-                    "name": "minecraft:tnt",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 3
-                        }
-                    ]
+                    "type": "loot_table",
+                    "name": "replenisher:loot/tool/tnt"
                 },
                 {
                     "type": "item",

@@ -12,7 +12,7 @@ public class FillAction extends CommandAction {
 		super(server, sender);
 	}
 
-	String lootTable = "replenisher:chests/start";
+	String lootTable = "replenisher:chest";
 
 	@Override
 	public CommandAction setArguments(String[] args) {
