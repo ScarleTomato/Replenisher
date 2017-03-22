@@ -5,68 +5,23 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "replenisher:loot/weapon",
-                    "weight": 2
+                    "name": "replenisher:chest/basic",
+                    "weight": 50
                 },
-                {
-                    "type": "empty",
-                    "weight": 1
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
                 {
                     "type": "loot_table",
-                    "name": "replenisher:loot/armor",
-                    "weight": 2
+                    "name": "replenisher:chest/eggs",
+                    "weight": 5
                 },
-                {
-                    "type": "empty",
-                    "weight": 1
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
                 {
                     "type": "loot_table",
-                    "name": "replenisher:loot/food",
-                    "weight": 2
+                    "name": "replenisher:chest/food",
+                    "weight": 15
                 },
-                {
-                    "type": "empty",
-                    "weight": 1
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
                 {
                     "type": "loot_table",
-                    "name": "replenisher:loot/tool",
-                    "weight": 2
-                },
-                {
-                    "type": "empty",
-                    "weight": 1
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "name": "replenisher:loot/junk",
-                    "weight": 2
-                },
-                {
-                    "type": "empty",
-                    "weight": 1
+                    "name": "replenisher:chest/junk",
+                    "weight": 30
                 }
             ]
         }

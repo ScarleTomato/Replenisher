@@ -1,0 +1,18 @@
+{
+    "pools": [
+        {
+            "rolls": 27,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "replenisher:loot/junk",
+                    "weight": 26
+                },
+                {
+                    "type": "empty",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

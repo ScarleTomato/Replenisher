@@ -2948,8 +2948,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 4
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:elder_guardian\"}}"
                         }
                     ]
                 },
@@ -2958,8 +2958,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 5
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:wither_skeleton\"}}"
                         }
                     ]
                 },
@@ -2968,8 +2968,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 6
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:stray\"}}"
                         }
                     ]
                 },
@@ -2978,8 +2978,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 23
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:husk\"}}"
                         }
                     ]
                 },
@@ -2988,8 +2988,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 27
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:zombie_villager\"}}"
                         }
                     ]
                 },
@@ -2998,8 +2998,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 28
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:skeleton_horse\"}}"
                         }
                     ]
                 },
@@ -3008,8 +3008,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 29
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:zombie_horse\"}}"
                         }
                     ]
                 },
@@ -3018,8 +3018,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 31
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:donkey\"}}"
                         }
                     ]
                 },
@@ -3028,8 +3028,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 32
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:mule\"}}"
                         }
                     ]
                 },
@@ -3038,8 +3038,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 34
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:evocation_illager\"}}"
                         }
                     ]
                 },
@@ -3048,8 +3048,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 35
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:vex\"}}"
                         }
                     ]
                 },
@@ -3058,8 +3058,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 36
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:vindication_illager\"}}"
                         }
                     ]
                 },
@@ -3068,8 +3068,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 50
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:creeper\"}}"
                         }
                     ]
                 },
@@ -3078,8 +3078,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 51
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:skeleton\"}}"
                         }
                     ]
                 },
@@ -3088,8 +3088,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 52
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:spider\"}}"
                         }
                     ]
                 },
@@ -3098,8 +3098,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 54
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:zombie\"}}"
                         }
                     ]
                 },
@@ -3108,8 +3108,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 55
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:slime\"}}"
                         }
                     ]
                 },
@@ -3118,8 +3118,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 56
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:ghast\"}}"
                         }
                     ]
                 },
@@ -3128,8 +3128,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 57
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:zombie_pigman\"}}"
                         }
                     ]
                 },
@@ -3138,8 +3138,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 58
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:enderman\"}}"
                         }
                     ]
                 },
@@ -3148,8 +3148,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 59
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:cave_spider\"}}"
                         }
                     ]
                 },
@@ -3158,8 +3158,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 60
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:silverfish\"}}"
                         }
                     ]
                 },
@@ -3168,8 +3168,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 61
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:blaze\"}}"
                         }
                     ]
                 },
@@ -3178,8 +3178,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 62
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:magma_cube\"}}"
                         }
                     ]
                 },
@@ -3188,8 +3188,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 65
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:bat\"}}"
                         }
                     ]
                 },
@@ -3198,8 +3198,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 66
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:witch\"}}"
                         }
                     ]
                 },
@@ -3208,8 +3208,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 67
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:endermite\"}}"
                         }
                     ]
                 },
@@ -3218,8 +3218,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 68
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:guardian\"}}"
                         }
                     ]
                 },
@@ -3228,8 +3228,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 69
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:shulker\"}}"
                         }
                     ]
                 },
@@ -3238,8 +3238,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 90
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:pig\"}}"
                         }
                     ]
                 },
@@ -3248,8 +3248,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 91
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:sheep\"}}"
                         }
                     ]
                 },
@@ -3258,8 +3258,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 92
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:cow\"}}"
                         }
                     ]
                 },
@@ -3268,8 +3268,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 93
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:chicken\"}}"
                         }
                     ]
                 },
@@ -3278,8 +3278,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 94
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:squid\"}}"
                         }
                     ]
                 },
@@ -3288,8 +3288,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 95
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:wolf\"}}"
                         }
                     ]
                 },
@@ -3298,8 +3298,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 96
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:mooshroom\"}}"
                         }
                     ]
                 },
@@ -3308,8 +3308,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 98
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:ocelot\"}}"
                         }
                     ]
                 },
@@ -3318,8 +3318,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 100
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:horse\"}}"
                         }
                     ]
                 },
@@ -3328,8 +3328,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 101
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:rabbit\"}}"
                         }
                     ]
                 },
@@ -3338,8 +3338,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 102
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:polar_bear\"}}"
                         }
                     ]
                 },
@@ -3348,8 +3348,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 103
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:llama\"}}"
                         }
                     ]
                 },
@@ -3358,8 +3358,8 @@
                     "name": "minecraft:spawn_egg",
                     "functions": [
                         {
-                            "function": "minecraft:set_data",
-                            "data": 120
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:villager\"}}"
                         }
                     ]
                 },
