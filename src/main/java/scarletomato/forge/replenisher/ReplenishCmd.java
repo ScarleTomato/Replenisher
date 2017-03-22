@@ -1,5 +1,6 @@
 package scarletomato.forge.replenisher;
 
+import java.util.Collections;
 import java.util.List;
 
 import net.minecraft.command.CommandException;
@@ -14,23 +15,23 @@ public class ReplenishCmd implements ICommand {
 
 	@Override
 	public int compareTo(ICommand other) {
-		return getCommandName().compareTo(other.getCommandName());
+		return getName().compareTo(other.getName());
 	}
 
 	@Override
-	public String getCommandName() {
+	public String getName() {
 		return "replenish";
 	}
 
 	@Override
-	public String getCommandUsage(ICommandSender sender) {
+	public String getUsage(ICommandSender sender) {
 		return "";
 	}
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public List<String> getCommandAliases() {
-		return Arrays.asList(new String[]{"repl", "r"});
+	public List<String> getAliases() {
+		return Arrays.asList(new String[] { "repl", "r" });
 	}
 
 	@Override
@@ -44,9 +45,8 @@ public class ReplenishCmd implements ICommand {
 	}
 
 	@Override
-	public List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args,
-			BlockPos pos) {
-		return null;
+	public List<String> getTabCompletions(MinecraftServer server, ICommandSender sender, String[] args, BlockPos pos) {
+		return Collections.emptyList();
 	}
 
 	@Override

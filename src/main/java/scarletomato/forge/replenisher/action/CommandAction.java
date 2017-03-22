@@ -29,6 +29,6 @@ public abstract class CommandAction {
 	}
 	
 	public void say(String format, Object... args) {
-		sender.addChatMessage(new TextComponentString(String.format(format, args)));
+		sender.sendMessage(new TextComponentString(String.format(format, args)));
 	}
 }

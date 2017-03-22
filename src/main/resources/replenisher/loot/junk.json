@@ -369,10 +369,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:bed"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:golden_rail"
                 },
                 {
@@ -418,10 +414,6 @@
                 {
                     "type": "item",
                     "name": "minecraft:piston"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:piston_head"
                 },
                 {
                     "type": "item",
@@ -683,80 +675,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:double_stone_slab"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_stone_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_stone_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 2
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_stone_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 3
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_stone_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 4
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_stone_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 5
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_stone_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 6
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_stone_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 7
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:stone_slab"
                 },
                 {
@@ -855,10 +773,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:fire"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:mob_spawner"
                 },
                 {
@@ -868,10 +782,6 @@
                 {
                     "type": "item",
                     "name": "minecraft:chest"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:redstone_wire"
                 },
                 {
                     "type": "item",
@@ -887,27 +797,11 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:wheat"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:farmland"
                 },
                 {
                     "type": "item",
                     "name": "minecraft:furnace"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:lit_furnace"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:standing_sign"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:wooden_door"
                 },
                 {
                     "type": "item",
@@ -923,10 +817,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:wall_sign"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:lever"
                 },
                 {
@@ -935,23 +825,11 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:iron_door"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:wooden_pressure_plate"
                 },
                 {
                     "type": "item",
                     "name": "minecraft:redstone_ore"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:lit_redstone_ore"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:unlit_redstone_torch"
                 },
                 {
                     "type": "item",
@@ -1011,23 +889,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:portal"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:lit_pumpkin"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:cake"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:unpowered_repeater"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:powered_repeater"
                 },
                 {
                     "type": "item",
@@ -1297,14 +1159,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:pumpkin_stem"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:melon_stem"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:vine"
                 },
                 {
@@ -1341,23 +1195,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:nether_wart"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:enchanting_table"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:brewing_stand"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:cauldron"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:end_portal"
                 },
                 {
                     "type": "item",
@@ -1374,64 +1212,6 @@
                 {
                     "type": "item",
                     "name": "minecraft:redstone_lamp"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:lit_redstone_lamp"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_wooden_slab"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_wooden_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_wooden_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 2
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_wooden_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 3
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_wooden_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 4
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_wooden_slab",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 5
-                        }
-                    ]
                 },
                 {
                     "type": "item",
@@ -1489,10 +1269,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:cocoa"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:sandstone_stairs"
                 },
                 {
@@ -1502,10 +1278,6 @@
                 {
                     "type": "item",
                     "name": "minecraft:ender_chest"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:tripwire_hook"
                 },
                 {
                     "type": "item",
@@ -1526,10 +1298,6 @@
                 {
                     "type": "item",
                     "name": "minecraft:jungle_stairs"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:command_block"
                 },
                 {
                     "type": "item",
@@ -1555,14 +1323,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:carrots"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:potatoes"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:wooden_button"
                 },
                 {
@@ -1584,14 +1344,6 @@
                 {
                     "type": "item",
                     "name": "minecraft:heavy_weighted_pressure_plate"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:unpowered_comparator"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:powered_comparator"
                 },
                 {
                     "type": "item",
@@ -2255,18 +2007,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:standing_banner"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:wall_banner"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:daylight_detector_inverted"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:red_sandstone"
                 },
                 {
@@ -2292,10 +2032,6 @@
                 {
                     "type": "item",
                     "name": "minecraft:red_sandstone_stairs"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:double_stone_slab2"
                 },
                 {
                     "type": "item",
@@ -2387,10 +2123,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:purpur_double_slab"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:purpur_slab"
                 },
                 {
@@ -2399,27 +2131,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:beetroots"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:grass_path"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:end_gateway"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:repeating_command_block"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:chain_command_block"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:frosted_ice"
                 },
                 {
                     "type": "item",
@@ -2508,378 +2220,6 @@
                 {
                     "type": "item",
                     "name": "minecraft:black_shulker_box"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:white_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:orange_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:magenta_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:light_blue_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:yellow_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:lime_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:pink_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:gray_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:light_gray_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:cyan_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:purple_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:blue_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:brown_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:green_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:red_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:black_glazed_terracotta"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 2
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 3
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 4
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 5
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 6
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 7
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 8
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 9
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 10
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 11
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 12
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 13
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 14
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 15
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 2
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 3
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 4
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 5
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 6
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 7
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 8
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 9
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 10
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 11
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 12
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 13
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 14
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:concrete_powder",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 15
-                        }
-                    ]
                 },
                 {
                     "type": "item",
@@ -4227,10 +3567,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:command_block_minecart"
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:mutton"
                 },
                 {
@@ -4264,10 +3600,6 @@
                 {
                     "type": "item",
                     "name": "minecraft:chorus_fruit"
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:popped_chorus_fruit"
                 },
                 {
                     "type": "item",
@@ -4343,13 +3675,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:record",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 13
-                        }
-                    ]
+                    "name": "minecraft:record_13"
                 },
                 {
                     "type": "item",
@@ -4389,13 +3715,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:record",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_data",
-                            "data": 11
-                        }
-                    ]
+                    "name": "minecraft:record_11"
                 },
                 {
                     "type": "item",

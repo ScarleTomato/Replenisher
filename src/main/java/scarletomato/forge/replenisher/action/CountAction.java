@@ -32,7 +32,7 @@ public class CountAction extends CommandAction {
 
 	static List<TileEntityChest> countAllChestsOnServer(MinecraftServer server) {
 		List<TileEntityChest> count = new LinkedList<>();
-		for(WorldServer ws : server.worldServers) {
+		for(WorldServer ws : server.worlds) {
 			for(TileEntity te : ws.loadedTileEntityList) {
 				if(te instanceof TileEntityChest) {
 					count.add((TileEntityChest) te);

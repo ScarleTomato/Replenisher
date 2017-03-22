@@ -1,5 +1,34 @@
 Changelog:
-Build 2221:
+Build 2228:
+	diesieben07:
+		Fix some cases where world time is not passed through the WorldProvider.
+		(#3685)
+
+Build 1.11.2-13.20.0.2227:
+	lukas.tenbrink:
+		Replace listSubtypes with listSupertypes to match the intended behavior.
+		(#3564)
+	lukas.tenbrink: Fix addTypes not adding in the base types. (#3681)
+
+Build 1.11.2-13.20.0.2226:
+	goto.minecraft: this finaly fixes #2866 (#3656)
+
+Build 1.11.2-13.20.0.2225:
+	williewillus: Fix MC-111753 (#3655)
+
+Build 1.11.2-13.20.0.2224:
+	fry: Small bugfix in lighting logic.
+	fry:
+		Fix default missing model zoom text not being set to false on all
+		places.
+
+Build 1.11.2-13.20.0.2223:
+	fry: Added the variant name to the missing model. (#3328)
+
+Build 1.11.2-13.20.0.2222:
+	tehgeek: Fix #3635 MC-103403 fix ingredient count for ingot block recipes (#3640)
+
+Build 1.10.2-12.18.3.2221:
 	LexManos:
 		Cache entity constructors for a small performance optimization
 		(cherry picked from commit 50bf03b82b72866bd54e796a37707d45bcbf3d80)
