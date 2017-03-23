@@ -1,5 +1,6 @@
 package scarletomato.forge.replenisher;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -65,6 +66,7 @@ public class Replenisher
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+    	loadConfig(event.getSuggestedConfigurationFile());
     	new EventLogger().register();
     	//Most events get posted to this bus
     	MinecraftForge.EVENT_BUS.register(this);
@@ -74,7 +76,13 @@ public class Replenisher
     	MinecraftForge.ORE_GEN_BUS.register(this);
     }
     
-    void distributePlayer(EntityPlayer player) {
+    private void loadConfig(File configFile) {
+//    	new BlockPos(new Vec3i)
+//		Configuration config = new Configuration(configFile);
+//		config.get("repl", "spawnPoints", new String[]{}, minValue, maxValue, comment)
+	}
+
+	void distributePlayer(EntityPlayer player) {
     	BlockPos pos = gameSpawns.poll();
     	tp(player, pos);
     	gameSpawns.add(pos);

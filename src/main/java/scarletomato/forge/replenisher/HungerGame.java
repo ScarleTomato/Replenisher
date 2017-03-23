@@ -1,14 +1,11 @@
 package scarletomato.forge.replenisher;
 
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
-import net.minecraftforge.common.MinecraftForge;
 
 public class HungerGame implements Runnable {
 	private MinecraftServer server;
