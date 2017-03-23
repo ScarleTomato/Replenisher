@@ -23,6 +23,8 @@ public abstract class CommandAction {
 			return new CountAction(server, sender).setArguments(args);
 		} else if("fill".equalsIgnoreCase(args[0])) {
 			return new FillAction(server, sender).setArguments(args);
+		} else if("spawn".equalsIgnoreCase(args[0])) {
+			return new SetSpawnAction(server, sender).setArguments(args);
 		} else {
 			return new HelpAction(server, sender);
 		}
