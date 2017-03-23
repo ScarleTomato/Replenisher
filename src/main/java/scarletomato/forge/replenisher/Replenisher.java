@@ -1,14 +1,12 @@
 package scarletomato.forge.replenisher;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 import net.minecraft.block.BlockChest;
-import net.minecraft.entity.MoverType;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.potion.Potion;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityChest;
@@ -16,14 +14,11 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.GameType;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.player.PlayerContainerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.world.BlockEvent;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -34,15 +29,38 @@ import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent;
 @Mod(modid = Replenisher.MODID, version = Replenisher.VERSION, acceptableRemoteVersions="*", name = "Replenisher")
 public class Replenisher
 {
+	public static Replenisher INSTANCE;
     public static final String MODID = "replenisher";
     public static final String VERSION = "1.0";
 	private MinecraftServer server;
 	SoundEvent witherSound;
 	public static BlockPos spawnPoint;
 	public static Queue<BlockPos> gameSpawns = new LinkedList<>();
+	public static HungerGame runningGame;
+	public static final GameType livingMode = GameType.SURVIVAL;
+	public static final Resurrector resurrector = new Resurrector();
+	public static final Haunter haunter = new Haunter();
+	
+	/**
+	 * State of the hunger game<br/>
+	 * 0 = off<br/>
+	 * 1 = players in lobby, waiting to distribute<br/>
+	 * 2 = moved to starting positions, waiting to begin. Players can't move<br/>
+	 * 3 = game running - resurrection is off<br/>
+	 * 4 = game running - resurrection is on
+	 * 
+	 */
+	public static int gamestate = 0;
 
 	String lootTable = "replenisher:chest";
 	HashMap<World, HashMap<BlockPos, Long>> worldStamps = new HashMap<>();
+	
+	public Replenisher() {
+		if(null != INSTANCE) {
+			throw new RuntimeException("Replenisher tried to start a second instance");
+		}
+		INSTANCE = this;
+	}
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -68,18 +86,22 @@ public class Replenisher
     	server = event.getServer();
     	event.registerServerCommand(new ReplenishCmd());
     	witherSound = SoundEvent.REGISTRY.getObject(new ResourceLocation("minecraft", "entity.wither.spawn"));
+    	
+    	for(ResourceLocation k : Potion.REGISTRY.getKeys()){
+    		System.out.println(k);
+    	}
     }
 
 	@SubscribeEvent
 	public void playerRespawn(PlayerRespawnEvent event) {
 		event.player.setGameType(GameType.SPECTATOR);
-		event.player.world.playSound(null, event.player.getPosition(), witherSound, SoundCategory.HOSTILE, Float.MAX_VALUE, Float.MAX_VALUE);
+		event.player.world.playSound(null, event.player.getPosition(), witherSound, SoundCategory.HOSTILE, Float.MAX_VALUE, Float.MAX_VALUE/2);
 		if(null != spawnPoint) {
 			tp(event.player, spawnPoint);
 		}
 	}
 
-	private void tp(EntityPlayer player, BlockPos pos) {
+	public static void tp(EntityPlayer player, BlockPos pos) {
 		player.attemptTeleport(pos.getX()+.5, pos.getY()+.5, pos.getZ()+.5);
 	}
 
@@ -124,5 +146,9 @@ public class Replenisher
 	
 	void broadcast(Object msg) {
 		server.getCommandManager().executeCommand(server, "say " + String.valueOf(msg));
+	}
+	
+	public void cmd(String format, Object... args) {
+		server.getCommandManager().executeCommand(server, String.format(format, args));
 	}
 }
