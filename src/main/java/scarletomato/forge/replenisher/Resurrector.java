@@ -1,5 +1,7 @@
 package scarletomato.forge.replenisher;
 
+import java.util.Random;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
@@ -14,6 +16,8 @@ public class Resurrector {
 	BlockPos resurrectionPoint;
 	int radius = 5;
 	long expiration;
+	long notify;
+	private static final String[] colors = {"black", "dark_blue", "dark_green", "dark_aqua", "dark_red", "dark_purple", "gold", "gray", "dark_gray", "blue", "green", "aqua", "red", "light_purple", "yellow", "white"};
 	
 	private void restartTimer() {
 		expiration = System.currentTimeMillis() + 300000;
@@ -22,6 +26,9 @@ public class Resurrector {
 	public void activate() {
 		restartTimer();
     	MinecraftForge.EVENT_BUS.register(this);
+    	Replenisher.INSTANCE.cmd("title @a[m=3] times 20 200 20");
+    	Replenisher.INSTANCE.cmd("title @a[m=3] subtitle {\"text\":\"Head to the center to respawn\"}");
+    	Replenisher.INSTANCE.cmd("title @a[m=3] title {\"text\":\"Resurrection\"}");
 	}
 	
 	public void deactivate() {
@@ -30,6 +37,10 @@ public class Resurrector {
 
 	@SubscribeEvent
 	public void playerRespawn(PlayerTickEvent event) {
+		if(notify < System.currentTimeMillis()) {
+	    	Replenisher.INSTANCE.cmd("title @a[m=3] actionbar {\"text\":\"Resurrection\",\"color\":\"%s\"}", colors[(int)(new Random().nextDouble()*colors.length)]);
+			notify = System.currentTimeMillis() + 1000;
+		}
 		if(event.player.isSpectator() && event.player.getPosition().distanceSq(resurrectionPoint) < radius){
 			event.player.setGameType(Replenisher.livingMode);
 			potion(event.player, "glowing", 30);

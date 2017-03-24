@@ -39,11 +39,10 @@ public class HungerGame implements Runnable {
 	
 	private void distributePlayers() {
 		for(EntityPlayerMP pl : server.getPlayerList().getPlayers()){
-			BlockPos pos = Replenisher.gameSpawns.poll();
+			BlockPos pos = Replenisher.INSTANCE.rotateGameSpawns();
 			cages.add(new Cage(pl.getEntityWorld(), pos).create());
 			pl.setGameType(Replenisher.livingMode);
 			Replenisher.tp(pl, pos);
-			Replenisher.gameSpawns.add(pos);
 		}
 	}
 

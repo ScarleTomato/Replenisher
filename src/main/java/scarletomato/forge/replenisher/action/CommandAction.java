@@ -29,6 +29,8 @@ public abstract class CommandAction {
 			return new StartGameAction(server, sender).setArguments(args);
 		} else if("res".equalsIgnoreCase(args[0])) {
 			return new SetResAction(server, sender).setArguments(args);
+		} else if("set".equalsIgnoreCase(args[0])) {
+			return new SetAction(server, sender).setArguments(args);
 		} else {
 			return new HelpAction(server, sender);
 		}

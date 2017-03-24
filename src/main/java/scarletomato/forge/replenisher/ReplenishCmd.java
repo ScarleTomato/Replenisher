@@ -1,5 +1,6 @@
 package scarletomato.forge.replenisher;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -8,7 +9,6 @@ import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
-import scala.actors.threadpool.Arrays;
 import scarletomato.forge.replenisher.action.CommandAction;
 
 public class ReplenishCmd implements ICommand {
@@ -29,7 +29,6 @@ public class ReplenishCmd implements ICommand {
 	}
 
 	@Override
-	@SuppressWarnings("unchecked")
 	public List<String> getAliases() {
 		return Arrays.asList(new String[] { "repl", "r" });
 	}

@@ -26,9 +26,9 @@ public class SetSpawnAction extends CommandAction {
 			Replenisher.spawnPoint = sender.getPosition();
 		} else if ("clear".equalsIgnoreCase(predicate)) {
 			Replenisher.spawnPoint = null;
-			Replenisher.gameSpawns.clear();
+			Replenisher.INSTANCE.clearSpawns();
 		} else if ("g".equalsIgnoreCase(predicate)) {
-			Replenisher.gameSpawns.add(sender.getPosition());
+			Replenisher.INSTANCE.addGameSpawn(sender.getPosition());
 		}
 		return this;
 	}

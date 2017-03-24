@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.ServerTickEvent;
 
 public class Haunter {
+	int interval = 10000;
 	long timeToAct;
 
 	String[] haunts = {
@@ -20,7 +21,7 @@ public class Haunter {
 
 	
 	private void restartTimer() {
-		timeToAct = System.currentTimeMillis() + 10000;
+		timeToAct = System.currentTimeMillis() + (long)(new Random().nextDouble()*(interval/2)+(interval/2));
 	}
 	
 	public void activate() {
@@ -38,6 +39,11 @@ public class Haunter {
 			Replenisher.INSTANCE.cmd(haunts[(int)(new Random().nextDouble()*haunts.length)]);
 			restartTimer();
 		}
+	}
+
+	public void setTime(int seconds) {
+		interval = seconds*1000;
+		restartTimer();
 	}
 	
 //	public static void main(String[] args) {

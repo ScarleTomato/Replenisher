@@ -2,6 +2,7 @@ package scarletomato.forge.replenisher;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -18,6 +19,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.GameType;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -36,9 +38,9 @@ public class Replenisher
 	private MinecraftServer server;
 	SoundEvent witherSound;
 	public static BlockPos spawnPoint;
-	public static Queue<BlockPos> gameSpawns = new LinkedList<>();
+	private Queue<BlockPos> gameSpawns = new LinkedList<>();
 	public static HungerGame runningGame;
-	public static final GameType livingMode = GameType.SURVIVAL;
+	public static GameType livingMode = GameType.SURVIVAL;
 	public static final Resurrector resurrector = new Resurrector();
 	public static final Haunter haunter = new Haunter();
 	
@@ -55,6 +57,7 @@ public class Replenisher
 
 	String lootTable = "replenisher:chest";
 	HashMap<World, HashMap<BlockPos, Long>> worldStamps = new HashMap<>();
+	private Configuration config;
 	
 	public Replenisher() {
 		if(null != INSTANCE) {
@@ -77,10 +80,25 @@ public class Replenisher
     }
     
     private void loadConfig(File configFile) {
-//    	new BlockPos(new Vec3i)
-//		Configuration config = new Configuration(configFile);
-//		config.get("repl", "spawnPoints", new String[]{}, minValue, maxValue, comment)
+		config = new Configuration(configFile);
+//		for(String s : config.getStringList("spawnPoints", "h", new String[]{"0,0,0"})){
+//			gameSpawns.add(fromString(s));
+//		}
+    	config.save();
 	}
+    
+    public void saveConfig() {
+//    	ConfigCategory h = config.getCategory("h");
+    	
+    	String[] strs = new String[gameSpawns.size()];
+    	Iterator<BlockPos> it = gameSpawns.iterator();
+    	for(int i = 0; i < strs.length; i++) {
+    		strs[i] = toString(it.next());
+    	}
+    	
+//    	config.get("h", "spawnPoints", null, "Positions where players will be placed before the game begins").set(strs);
+    	config.save();
+    }
 
 	void distributePlayer(EntityPlayer player) {
     	BlockPos pos = gameSpawns.poll();
@@ -156,7 +174,32 @@ public class Replenisher
 		server.getCommandManager().executeCommand(server, "say " + String.valueOf(msg));
 	}
 	
+	public String toString(BlockPos pos) {
+		return String.format("%s,%s,%s", pos.getX(), pos.getY(), pos.getZ());
+	}
+	
+	public BlockPos fromString(String str) {
+		String[] strs = str.split(",");
+		return new BlockPos(Integer.valueOf(strs[0]), Integer.valueOf(strs[1]), Integer.valueOf(strs[2]));
+	}
+	
 	public void cmd(String format, Object... args) {
-		server.getCommandManager().executeCommand(server, String.format(format, args));
+		String cmd = String.format(format, args);
+		System.out.println(cmd);
+		server.getCommandManager().executeCommand(server, cmd);
+	}
+
+	public BlockPos rotateGameSpawns() {
+		BlockPos ret = gameSpawns.poll();
+		gameSpawns.add(ret);
+		return ret;
+	}
+
+	public void addGameSpawn(BlockPos position) {
+		gameSpawns.add(position);
+	}
+
+	public void clearSpawns() {
+		gameSpawns.clear();
 	}
 }
