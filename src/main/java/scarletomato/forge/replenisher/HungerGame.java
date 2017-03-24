@@ -28,8 +28,11 @@ public class HungerGame implements Runnable {
 		sleep(10000);
 		distributePlayers();
 		say("The Hunger Games begin in 10 seconds");
+		Show show = new Show(System.currentTimeMillis()+10000, server, Replenisher.fromString(Replenisher.INSTANCE.config.getString(Configuration.RES_POINT)));
+		show.activate();
 		sleep(10000);
 		say("Begin!");
+		show.deactivate();
 		release();
 		Replenisher.haunter.activate();
 	}
@@ -51,6 +54,7 @@ public class HungerGame implements Runnable {
 			cages.add(new Cage(pl.getEntityWorld(), pos).create());
 			pl.addPotionEffect(new PotionEffect(Potion.REGISTRY.getObject(new ResourceLocation("minecraft","health_boost")), 200));
 			pl.addPotionEffect(new PotionEffect(Potion.REGISTRY.getObject(new ResourceLocation("minecraft","saturation")), 200));
+			pl.inventory.clear();
 			pl.setGameType(livingMode);
 			Replenisher.tp(pl, pos);
 			spawns.add(s);

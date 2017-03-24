@@ -9,10 +9,10 @@ public class Cage {
 	
 	private World world;
 	private BlockPos pos;
+	private IBlockState oldFloor;
 	private static final IBlockState AIR = Blocks.AIR.getDefaultState();
 	private static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
 	private static final IBlockState BARRIER = Blocks.BARRIER.getDefaultState();
-	private static final IBlockState STONE = Blocks.STONE.getDefaultState();
 
 	public Cage(World world, BlockPos pos) {
 		this.world = world;
@@ -20,8 +20,8 @@ public class Cage {
 	}
 	
 	public Cage create() {
+		oldFloor = world.getBlockState(pos.down());
 		world.setBlockState(pos.down(), BEDROCK);
-//		world.setBlockState(pos.up().up(), BARRIER);
 		world.setBlockState(pos.up().north(), BARRIER);
 		world.setBlockState(pos.up().south(), BARRIER);
 		world.setBlockState(pos.up().east(), BARRIER);
@@ -34,8 +34,7 @@ public class Cage {
 	}
 	
 	public Cage destroy() {
-		world.setBlockState(pos.down(), STONE);
-//		world.setBlockState(pos.up().up(), AIR);
+		world.setBlockState(pos.down(), oldFloor);
 		world.setBlockState(pos.up().north(), AIR);
 		world.setBlockState(pos.up().south(), AIR);
 		world.setBlockState(pos.up().east(), AIR);

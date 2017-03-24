@@ -61,6 +61,8 @@ public class Configuration {
 		
 		props.put(CHEST_LOOT_TABLE, forgeConfig.get(CATEGORY, CHEST_LOOT_TABLE, "replenisher:chest", "This is the resource location of the loot table that chests will use to get refilled"));
 		
+		props.put(RES_POINT, forgeConfig.get(CATEGORY, RES_POINT, "0,0,0", "This point where ghosts will be resurrected while a stone is activated"));
+		
 		save();
 	}
 	
