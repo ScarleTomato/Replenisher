@@ -22,6 +22,10 @@ public class EventLogger {
 			LOG.info("Event: " + event.getClass());
 			eventClasses.add(eventClass);
 		}
+    	
+//    	for(ResourceLocation k : Potion.REGISTRY.getKeys()){
+//    		System.out.println(k);
+//    	}
 	}
 
 	public void register() {

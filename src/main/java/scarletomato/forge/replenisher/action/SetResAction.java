@@ -2,6 +2,7 @@ package scarletomato.forge.replenisher.action;
 
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
+import scarletomato.forge.replenisher.Configuration;
 import scarletomato.forge.replenisher.Replenisher;
 
 public class SetResAction extends CommandAction {
@@ -30,7 +31,7 @@ public class SetResAction extends CommandAction {
 	    	Replenisher.resurrector.deactivate();
 		}
 		if(setSpawn) {
-			Replenisher.resurrector.setResPoint(sender.getPosition());
+			Replenisher.INSTANCE.config.set(Configuration.RES_POINT, Replenisher.toString(sender.getPosition()));
 		}
 		return this;
 	}

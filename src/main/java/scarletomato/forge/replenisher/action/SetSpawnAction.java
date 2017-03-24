@@ -2,6 +2,7 @@ package scarletomato.forge.replenisher.action;
 
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
+import scarletomato.forge.replenisher.Configuration;
 import scarletomato.forge.replenisher.Replenisher;
 
 public class SetSpawnAction extends CommandAction {
@@ -22,13 +23,10 @@ public class SetSpawnAction extends CommandAction {
 
 	@Override
 	public CommandAction execute() {
-		if(null==predicate) {
-			Replenisher.spawnPoint = sender.getPosition();
-		} else if ("clear".equalsIgnoreCase(predicate)) {
-			Replenisher.spawnPoint = null;
-			Replenisher.INSTANCE.clearSpawns();
+		if ("clear".equalsIgnoreCase(predicate)) {
+			Replenisher.INSTANCE.config.getStringList(Configuration.GAME_SPAWNS).clear();
 		} else if ("g".equalsIgnoreCase(predicate)) {
-			Replenisher.INSTANCE.addGameSpawn(sender.getPosition());
+			Replenisher.INSTANCE.config.getStringList(Configuration.GAME_SPAWNS).add(Replenisher.toString(sender.getPosition()));
 		}
 		return this;
 	}

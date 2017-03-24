@@ -25,6 +25,7 @@ public class Haunter {
 	}
 	
 	public void activate() {
+		interval = Replenisher.INSTANCE.config.getInt(Configuration.HAUNT_TIME) * 1000;
 		restartTimer();
     	MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -36,14 +37,10 @@ public class Haunter {
 	@SubscribeEvent
 	public void playerRespawn(ServerTickEvent event) {
 		if(System.currentTimeMillis() > timeToAct){
+			//TODO use loot table to spawn haunts?
 			Replenisher.INSTANCE.cmd(haunts[(int)(new Random().nextDouble()*haunts.length)]);
 			restartTimer();
 		}
-	}
-
-	public void setTime(int seconds) {
-		interval = seconds*1000;
-		restartTimer();
 	}
 	
 //	public static void main(String[] args) {
